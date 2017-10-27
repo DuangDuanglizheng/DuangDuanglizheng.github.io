@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.header, .footer {
+	background-color: maroon;
+    padding: 15px;
+    color: white;
+    font-family: Georgia;
+}
+
+.header {
+	text-align: center;
+    }
+
+.article {
+    background-color: teal;
+    color: white;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    font-family: sans-serif;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h1>Enver Creek Secondary</h1>
+</div>
+
+<div class="article">
+<h2>Soccer</h2>
+<p>Enver Creek's soccer team is a great opporitunity for athletes of all skill to come and play friendly games against other schools.</p>
+</div>
+
+<div class="article">
+<h2>Basketball</h2>
+<p>Enver Creek's basketball team is a nice choice to improve your skills in basketball.</p>
+</div>
+
+<div class="article">
+<h2>Volleyball</h2>
+<p>Enver Creek's volleyball team is a chance to improve your skills in basketball.</p>
+</div>
+
+<div class="footer">
+<p>Contact us:</p>
+</div>
+
+</body>
+</html>
