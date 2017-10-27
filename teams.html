@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    background-color: maroon;
+    color: white;
+    padding: 15px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+	width: 200px;
+    height: 150px;
+    float: right;
+}
+
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+    float: right;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Enver Creek</h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li><a href="DuangDuanglizheng.github.io/main.html">Main</a></li>
+      <li><a href="DuangDuanglizheng.github.io/clubs.html">Clubs and Teams</a></li>
+      <li><a href="DuangDuanglizheng.github.io/departments.html">Departments</a></li>
+    </ul>
+  </div>
+
+  <div class="column content">
+    <img src="https://nevadapreps.com/wp-content/uploads/2017/09/9219728_web1_bcr-soccer-aug04-16.jpg">
+    <h1>Soccer</h1>
+    <p>Enver Creek's soccer team is a great opporitunity for athletes of all skill to come and play friendly games against other schools.</p>
+  </div>
+  
+   <div class="column content">
+   <img src="https://hdwallsource.com/cool-basketball-wallpaper-41592.html">
+   <h2>Basketball</h2>
+   <p>Enver Creek's basketball team is a nice choice to improve your skills in basketball.</p>
+  </div>
+  
+  <div class="column content">
+  <h2>Volleyball</h2>
+  <p>Enver Creek's volleyball team is a chance to improve your skills in basketball.</p>
+</div>
+  
+</div>
+
+	<div class="footer">
+  	<p>Footer Text</p>
+</div>
+
+</body>
+</html>
