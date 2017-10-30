@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    background-color: maroon;
+    color: white;
+    padding: 15px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: teal;
+    color: #ffffff;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+img {
+	width: 200px;
+    height: 150px;
+    }
+
+.more {
+	float: right;
+    }
+.menu ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Enver Creek Secondary School</h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li>Main Page</li>
+      <li>Clubs and Teams</li>
+      <li>Departments</li>
+    </ul>
+  </div>
+    <div class="column content">
+  	<img src="https://www.surreyschools.ca/schools/envercreek/Extra-curricular/SportsTeams/Documents/Web%20pictures%20004.jpg">
+    <h1>Clubs and Teams</h1>
+    <p>Enver Creek Secondary School is a public high school located in Surrey, British Columbia, Canada and is part of the School District 36 Surrey.</p>
+  </div>
+
+  <div class="column content more">
+  <img src="https://hhsvoyager.org/wp-content/uploads/2017/10/184a7471b0436f4c-vollball.jpg"> 
+  <h2>Volleyball</h2>
+  <p>Enver Creek's volleyball team is a chance to improve your skills in basketball.</p>
+  </div>
+  
+  <div class="column content more">
+  	   <img src="http://thepeerproject.com/wp-content/uploads/2017/03/basketball-wilson.jpg">
+   <h2>Basketball</h2>
+   <p>Enver Creek's basketball team is a nice choice to improve your skills in basketball.</p>
+  </div>
+  
+    <div class="column content more">
+  	 <img src="https://nevadapreps.com/wp-content/uploads/2017/09/9219728_web1_bcr-soccer-aug04-16.jpg">
+    <h1>Soccer</h1>
+    <p>Enver Creek's soccer team is a great opporitunity for athletes of all skill to come and play friendly games against other schools.</p>
+  </div>
+  
+
+  
+</div>
+
+
+<div class="footer">
+  <p>Contact Us:</p>
+  <p>604-555-1234
+</div>
+
+</body>
+</html>
