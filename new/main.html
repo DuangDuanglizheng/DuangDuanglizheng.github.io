@@ -1,71 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Restaurant main page</title>
+<title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-	img {
-    	width: 450px;
-        height: 350px;
-        }
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
-/* Style the side navigation */
-.sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
 }
 
-
-/* Side navigation links */
-.sidenav a {
-    color: white;
-    padding: 16px;
-    text-decoration: none;
+/* Style the topnav links */
+.topnav a {
+    float: left;
     display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 /* Change color on hover */
-.sidenav a:hover {
+.topnav a:hover {
     background-color: #ddd;
     color: black;
 }
 
 /* Style the content */
 .content {
-    margin-left: 200px;
-    padding-left: 20px;
+    background-color: #ddd;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
 }
 </style>
 </head>
 <body>
 
-<div class="sidenav">
-  <a href="#">Main page</a>
+<div class="topnav">
+  <a href="#">Main</a>
   <a href="#">Menu</a>
-  <a href="#">Locations</a>
+  <a href="#">Location</a>
 </div>
 
 <div class="content">
-  <h2>Called Chicken</h2>
-  <p>The "Called Chicken" is a restaurant focus on how to make a good chicken.</p>
-  <img src="https://cdn.modernfarmer.com/wp-content/uploads/2014/02/chicken_hero.jpg">
-  <p>We have lot's of chicken food sell online<p>
-  <p>We use the three yellow chicken to be the meaet<p>
-  <p>Pls check our menu page choose your favourit chicken food<p>
+  <h2>Optionally</h2>
+  <p>"Optionally" is a place can eat most thing you want to eat if cooker know how to do it. You also can bring your own food material come and ask cooker to cook food which you like.So we don't have menu but there are some options we never change and we offer all the time, please check out our "menu" web page. If you're difficult to find our location please check our location web page.</p>
+</div>
+
+<div class="footer">
+  <p>Contact us: 778-868-7324</p>
 </div>
 
 </body>
