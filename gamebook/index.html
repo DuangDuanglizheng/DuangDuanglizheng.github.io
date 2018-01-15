@@ -3,21 +3,30 @@
 <head>
 <title>GameBook</title>
  <script>
-   var user = prompt("You can choose to be Human, Dwarf or Orc.").toUpperCase();
-
+   var user = prompt("Welcome to LOR! You can choose to be Human, Dwarf or Orc.").toLowerCase();
 switch(user) {
-    case 'Human':
-        alert("Welcome to lord of rings world Human!");
+    case 'human':
+        humanGame();
         break;
-    case 'Dwarf':
+    case 'dwarf':
         alert("Welcome to lord of rings world Dwarf!");
         break;
-    case 'Orc':
+    case 'orc':
         alert("Welcome to lord of rings world Orc!");
         break;
     default:
         alert("You must choose form those 3 races!");
 }
+function humanGame() {
+	//game
+    var humanStoryLine = prompt("You choosed human. Right now you are a normal farmer have a beautiful wife and a smart son. One day Orc is attacking your village, they are killing everyone! You have 3 choices now: 1.'take your sword and help human soldiers defend the attack', 2.'stay at home and don't do anything', 3.'hide in your sercet basement', 4.'run away but leave your wife and son' Tap the choice number to make choice.").toLowerCase();// 4 choice
+    
+    switch(humanStoryLine) {
+    	case '
+    }
+
+
+
 </script>
 </head>
 <body>
