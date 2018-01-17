@@ -22,16 +22,35 @@ function humanGame() {
     var humanStoryLine = prompt("You choosed human. Right now you are a normal farmer who has a beautiful wife and a smart son. One day Orc is attacking your village, they are killing everyone! What are you going to do? 1.'take your sword and help human soldiers defend the attack', 2.'stay at home and don't do anything', 3.'hide in your sercet basement', 4.'run away but leave your wife and son' Tap the choice number to make choice.").toLowerCase();// 4 choice
     
     switch(humanStoryLine) {
-    	case '1':
-        	alert("You take the sword and walking to the front line, you see everyone is running because the line is about to collapse! What are you going to do? 1.'Keep going' 2.'you just remember you wife and son are at home, go back to protect them'.").toLowerCase() {
+    	case '1'://huamn first choice
+        	var humanStoryLine1 = prompt("You take the sword and walking to the front line, you see everyone is running because the line is about to collapse! What are you going to do? 1.'Keep going' 2.'you just remember you wife and son are at home, go back to protect them'.");
+            
+            	switch(humanStoryLine1) {
+                	case '1': 
+                
+                }
+                
             break;
             
         case '2':
-        	alert("With the scream sound, Orc is already invaded the village. Make your next move. 1.'still stay at home', 2.'
-        
+        	alert("With the scream sound, Orc is already invaded the village. Make your next move. 1.'Keep stay', 2.'take your wife and son to the farm'.");
+       		break;
+         
+        case '3':
+        	alert("you and your family hide in the secert basement, Orc didn't find you! But there's new problem, you forgot to bring the food and water! Make you next move: 1.'Go out now bring the food and water', 2. 'stay for 2 or 3 days and go out'.");
+            break;
+            
+        case '4':
+        	alert("After you run away, Orc finds your wife and son, he killed them. Also you been killed by Orc on the road!");
+        	break;
+            
+        default:
+        	alert("Pls check your answer! It must be the number of choice.");
+            }
     }
 </script>
 </head>
 <body>
 </body>
 </html>
+
