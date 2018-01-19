@@ -9,18 +9,17 @@ switch(user) {
         humanGame();
         break;
     case 'dwarf':
-        alert("
-	      !");
+        dwarfGame();
         break;
     case 'orc':
-        alert("Welcome to lord of rings world Orc!");
+        orcGame();
         break;
     default:
         alert("You must choose form those 3 races!");
 }
 function humanGame() { //human game
-    var humanStoryLine = prompt("You choosed human. Right now you are a normal farmer who has a beautiful wife and a smart son. One day Orc is attacking your village, they are killing everyone! What are you going to do? 1.'take your sword and help human soldiers defend the attack', 2.'stay at home and don't do anything', 3.'hide in your sercet basement', 4.'run away but leave your wife and son' Tap the choice number to make choice.").toLowerCase();// 4 choice
-    
+    var humanStoryLine = prompt("You choosed human. Right now you are a normal farmer who has a beautiful wife and a smart son. One day Orc is attacking your village, they are killing everyone! Try to make your family and you alive. What are you going to do?1.'take your sword and help human soldiers defend the attack', 2.'stay at home and don't do anything', 3.'hide in your sercet basement', 4.'run away but leave your wife and son' Tap the choice number to make choice.").toLowerCase();// 4 choice
+
     switch(humanStoryLine) {
     	case '1'://human first choice
         	var humanStoryLine1 = prompt("You take the sword and walking to the front line, you see everyone is running because the line is about to collapse! What are you going to do? 1.'Keep going' 2.'you just remember your wife and son are at home, go back to protect them'.");
@@ -41,9 +40,8 @@ function humanGame() { //human game
                             default:
         						alert("Please check your answer! It must be the number of choices.");
                          	}
-                    break; //case 1
-                    
-                    
+                    break; //case 1                    
+///////////////////////////////////////////////////////////////                    
                     case '2': 
                     var humanStoryLine1two = prompt("When you back home you see your wife and son already been killed! There is a Orc which holding a big battleax with blood. 1.'revenge' 2.'run'");
                     	
@@ -62,10 +60,7 @@ function humanGame() { //human game
                     break; //case '2'
                }
         break;
-          
-        
-        
-        
+ /////////////////////////////////////////////////////////        
         case '2': //human second choice
         	var humanStoryLine2 = prompt("With the scream sound, Orc is already invaded the village. Make your next move. 1.'Keep stay', 2.'take your wife and son to the farm'.");
             	
@@ -82,10 +77,7 @@ function humanGame() { //human game
                     	alert("Please check your answer! It must be the number of choices.");
                 } 
         break;
-         
-        
-        
-        
+ ///////////////////////////////////////////////////////////  
         case '3': //human theird choice
         	var humanStoryLine3 = prompt("you and your family hide in the secert basement, Orc didn't find you! But there's new problem, you forgot to bring the food and water! Make you next move: 1.'Go out now bring the food and water', 2. 'stay for 2 or 3 days and go out'.");
             	
@@ -95,16 +87,11 @@ function humanGame() { //human game
                     break;
                     
                     case '2':
-                    	alert("")
+                    	alert("After 2 days you finally know that Orc is already gone so you come out try to find some water and food. But you're too weak, can't even walk.You die..........")
+                    break;
                 }
         break;
-            
-        
-        
-        
-        
-        
-        
+ ///////////////////////////////////////////////// //////////                  
         case '4': //human fourth choice
         	alert("After you run away, Orc finds your wife and son, he killed them. Also you been killed by Orc on the road!");
         	break;
@@ -114,8 +101,10 @@ function humanGame() { //human game
             
     }
     }
+    
 </script>
 </head>
 <body>
+
 </body>
 </html>
