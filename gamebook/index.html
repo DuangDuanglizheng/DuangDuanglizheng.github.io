@@ -19,14 +19,13 @@ switch(user) {
 }
 function humanGame() { //human game
     var humanStoryLine = prompt("You choosed human. Right now you are a normal farmer who has a beautiful wife and a smart son. One day Orc is attacking your village, they are killing everyone! Try to make your family and you alive. What are you going to do? \n1. Take your sword and help human soldiers defend the attack \n2. Stay at home and don't do anything \n3. Hide in your sercet basement \n4. Run away but leave your wife and son Tap the choice number to make choice.").toLowerCase();// 4 choice
-
     switch(humanStoryLine) {
     	case '1'://human first choice
         	var humanStoryLine1 = prompt("You take the sword and walking to the front line, you see everyone is running because the line is about to collapse! What are you going to do? \n1. Keep going \n2. You just remember your wife and son are at home, go back to protect them.");
             
             	switch(humanStoryLine1) { 
                 	case '1': 
-                    var humanStoryLine1one = prompt("An Orc see you! He is yelling and wanst to cut you to piece by piece!Be prepare for the fight! There is a bowie full of fish oil. \n1.use your sword  \n2. light fish oil to burn him");
+                    var humanStoryLine1one = prompt("An Orc see you! He is yelling and wanst to cut you to piece by piece!Be prepare for the fight! There is a bowie full of fish oil. \n1. use your sword  \n2. light fish oil to burn him");
                     	
                         switch(humanStoryLine1one) {
                         	case '1':
@@ -41,7 +40,7 @@ function humanGame() { //human game
         						alert("Please check your answer! It must be the number of choices.");
                          	}
                     break; //case 1                    
-///////////////////////////////////////////////////////////////                    
+                    
                     case '2': 
                     var humanStoryLine1two = prompt("When you back home you see your wife and son already been killed! There is a Orc which holding a big battleax with blood. \n1. revenge \n2. run");
                     	
@@ -60,9 +59,9 @@ function humanGame() { //human game
                     break; //case '2'
                }
         break;
- /////////////////////////////////////////////////////////        
+/////////////////////////////////////////////////////////        
         case '2': //human second choice
-        	var humanStoryLine2 = prompt("With the scream sound, Orc is already invaded the village. Make your next move. 1.'Keep stay', 2.'take your wife and son to the farm'.");
+        	var humanStoryLine2 = prompt("With the scream sound, Orc is already invaded the village. Make your next move. \n1. keep stay, \n2. take your wife and son to the farm.");
             	
                 switch(humanStoryLine2) {
                 	case '1': 
@@ -73,13 +72,13 @@ function humanGame() { //human game
                    	 	alert("You and your family find a big haystack you choose to hide in there. Over one night, Orc can't find you,  you alive! You win!");
                     	break;
                     
-                    default:
+                    default :
                     	alert("Please check your answer! It must be the number of choices.");
                 } 
         break;
  ///////////////////////////////////////////////////////////  
         case '3': //human theird choice
-        	var humanStoryLine3 = prompt("you and your family hide in the secert basement, Orc didn't find you! But there's new problem, you forgot to bring the food and water! Make you next move: 1.'Go out now bring the food and water', 2. 'stay for 2 or 3 days and go out'.");
+        	var humanStoryLine3 = prompt("you and your family hide in the secert basement, Orc didn't find you! But there's new problem, you forgot to bring the food and water! Make you next move: \n1. go out now bring the food and water, \n2. stay for 2 or 3 days and go out.");
             	
                 switch(humanStoryLine3) {
                 	case '1':
@@ -101,6 +100,24 @@ function humanGame() { //human game
             
     }
     }
+
+function dwarfGame() { //dwarf game
+	var dwarfStoryLine = prompt("You choosed dwarf! As we know, dwarf are rich and have a high forging technology. You are a dwarf who's a little famous about in forging weapon. One day dwarf king want to see you and give you a mission. Try not to die and finish the mission. \n1. go to his castle \n2. not to go")
+		switch(dwarfStoryLine) {
+        	case '1':
+            	var dwarfStoryLine1 = prompt("")
+            break;
+            case '2':
+            	alert("King is really mad and give you a penatly.....");
+                break;
+                
+            default :
+            	alert("Pls check your answer! It must be the number of choice.");
+            
+            
+        }
+
+}
     
 </script>
 </head>
