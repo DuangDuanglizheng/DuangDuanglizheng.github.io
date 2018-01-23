@@ -3,16 +3,13 @@
 <head>
 <title>GameBook</title>
  <script>
-   var user = prompt("Welcome to LOR! You can choose to be Human, Dwarf or Orc.").toLowerCase();
+   var user = prompt("Welcome to LOR! You can choose to be Human or Dwarf").toLowerCase();
 switch(user) {
     case 'human':
         humanGame();
         break;
     case 'dwarf':
         dwarfGame();
-        break;
-    case 'orc':
-        orcGame();
         break;
     default:
         alert("You must choose form those 3 races!");
@@ -96,17 +93,50 @@ function humanGame() { //human game
         	break;
             
         default:
-        	alert("Pls check your answer! It must be the number of choice.");
+        	alert("Pls check your answer! It must be the number of choices.");
             
     }
     }
-
 function dwarfGame() { //dwarf game
-	var dwarfStoryLine = prompt("You choosed dwarf! As we know, dwarf are rich and have a high forging technology. You are a dwarf who's a little famous about in forging weapon. One day dwarf king want to see you and give you a mission. Try not to die and finish the mission. \n1. go to his castle \n2. not to go")
+	var dwarfStoryLine = prompt("You choosed dwarf! As we know, dwarf are rich and have a high forging technology. You are a dwarf who's a little famous about in forging weapon. One day dwarf king want to see you and give you a mission. Try to take the castle back. \n1. go to his castle \n2. not to go")
 		switch(dwarfStoryLine) {
         	case '1':
-            	var dwarfStoryLine1 = prompt("")
+            
+            	var dwarfStoryLine1 = prompt("About 300 years ago, a dragon occupy dwarf's castle. Because of dragon loves jewerly and gold, so he took the castle, that's a big lost for dwarfs. King want you to take some soldiers bring the castle back and kill that dragon. Alright, you and 10 thousand expedition forces go to the castle! There are 4 gates point 4 directions. \n1. go to the main gate.");
+                	
+                    switch(dwarfStoryLine1) {
+                    	
+                        case '1':
+                        	var dwarfStoryLine1one = prompt("You push the gate but it's locked \n1. use battering ram open the gate. \n2. Knock, knock");
+                            	switch(dwarfStoryLine1one)
+                                	
+                                    case '1':
+                            			alert("You make the dragon very mad! He burned you all!");
+                                    break;
+                                    
+                                    case '2':
+                                    	var dwarfStoryLine1two = prompt("'Who's there?' a very loud voice talking \n1. You say 'we're the dwarf army, my King want me to take the treasure back! \n2. don't say anything just break the door and attack the dragon");
+                                        
+                                        	
+                                            switch(dwarfStoryLine1two) {
+                                            	case '1':
+                                                	alert("'Ok, you just take treasure back, every year so many come to attack me, I can't even sleep. So tired.......' Well, you take the treasure back you win! ");
+                                                    break;
+                                                 
+                                                case '2':
+                                                	alert("Dragon killed you all just like other challenger.....");
+                                                    break;
+                                                    
+                                                default:
+                                                	alert("Pls check your answer! It must be the number of choices.");
+                                            }
+                                            break;
+                        break;
+ 
+                   }
+       
             break;
+            
             case '2':
             	alert("King is really mad and give you a penatly.....");
                 break;
@@ -116,7 +146,6 @@ function dwarfGame() { //dwarf game
             
             
         }
-
 }
     
 </script>
